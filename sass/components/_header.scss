@@ -1,0 +1,33 @@
+
+
+.header {
+  background-color: $background-color-full-white;
+  border-bottom: 1px solid $border-color-grey;
+}
+
+.top-place{
+  display: flex;
+  
+}
+
+.header__burger-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40;
+  height: 40;
+  margin-left: auto;
+  background-color: $background-color-full-white;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+
+
+}
+}
+
+
+
+
+
+

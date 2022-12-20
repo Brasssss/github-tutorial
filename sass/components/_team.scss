@@ -1,0 +1,70 @@
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: $background-color-dark-white;
+
+
+&__title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 28px;
+  line-height: calc(33/28);
+  text-align: center;
+}
+
+&__card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+&__item-card {
+  display: block;
+  width: 100%;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: $background-color-full-white;
+}
+
+&__image {
+  margin-bottom: 30px;
+}
+
+&__name {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+&__position {
+  padding-bottom: 30px;
+  color: $text-color-grey;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  &__item-card {
+    @include calc (2, 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  &__item-card {
+    @include calc (4, 30px);
+  }
+    &__title{
+      font-size: 36px;
+      line-height: calc(42/36);
+    }
+}
+
+
+}
+
+
+
+
