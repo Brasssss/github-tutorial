@@ -1,33 +1,7 @@
-/* основные цвета */
-/* 
-цвет фона черный  #2F303A
-цвет фона белый  #F5F5F5
-цвет фона темно-белый #F5F4FA
-цвет фона сероватый #757575 
-цвет фона иконок белый  #FFFFFF
-цвет текста черный #212121
-цвет текста серый #757575
-цвет текста белый #FFFFFF
-Цвет лого черный #000000
-Цвет лого синий #2196F3 
-Цвет выделенного текста синий  #2196F3
-цвет ссылок в адресе #rgba(255, 255, 255, .4)
-*/
+
 
 :root{
-    --background-color-black : #2F303A;
-    --background-color-white : #F5F5F5;
-    --background-color-dark-white : #F5F4FA;
-    --background-color-grey: #757575;
-    --background-color-full-white: #FFFFFF;
-    --text-color-black: #212121;
-    --text-color-grey:#757575;
-    --text-color-white: #FFFFFF;
-    --text-color-blue: #2196F3;
-    --logo-color-black: #212121;
-    --logo-color-blue: #2196F3;
-    --accent-color-blue: #2196F3;
-    --address-links-color-grey: rgba(255, 255, 255, .4);
+
 }
 .body-style{
     font-family: 'Roboto', sans-serif;
@@ -38,6 +12,8 @@
 }
 ul{
     list-style: none;
+    padding-left: 0;
+    
 }
 a{ 
     text-decoration: none;
@@ -48,60 +24,7 @@ p{
 
 /* header */
 
-.header{
-    background-color: var(--background-color-full-white);
-}
-.logo{
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    color: var(--logo-color-black);
-}
 
-.logo-part{
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    color: var(--logo-color-blue);
-}
-.nav-link{
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--text-color-black);
-}
-.nav-link:hover,
-.nav-link:focus{
-    color:  var(--accent-color-blue);
-}
-.nav-contacts-link{
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--text-color-grey)
-}
-.nav-contacts-link:hover,
-.nav-contacts-link:focus{
-    color: var(--accent-color-blue);
-}
-
-/* герой/hero */
-.hero{
-    background-color: var(--background-color-black);
-}
-
-.hero-title{
-    color: var(--text-color-white);
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 0.06em;
-    
-}
 
 
 
@@ -118,22 +41,32 @@ p{
 
 
 .container {
-    width: 320px;
+    box-sizing: border-box;
+    width : 320px;
     padding: 20px;
+    margin: auto;
 }
 
 .contacts__stores-list {
     display: flex;
     flex-flow: column;
+    align-items: center;
+    
     gap: 16px;
+    
 
 }
 
 .store {
     display: block;
+    box-sizing: border-box;
+    width: 280px;
     padding-top: 40px;
     padding-bottom: 24px;
     padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 24px;
+    background-color: chartreuse;
     
     
 }
@@ -176,7 +109,8 @@ p{
 }
 
 .store__time {
-    display: block;
+    display: flex;
+    flex-flow: column;
 
     padding-left: 0;
     padding-top: 24px;
@@ -186,6 +120,10 @@ p{
 
 }
 
+.store__time-item{
+    display: flex;
+    flex-flow: column;
+}
 .store__time-item:last-child{
     padding-top: 8px;
 
@@ -202,22 +140,28 @@ p{
 .store__working-time {
     display: inline-block;
     height: 22px;
+    color: #ABABAB;
 }
 
 .store__list {
     padding-left: 0;
-    margin-top: 24px;
+    padding-top: 24px;
     
 }
 
+
 .store__item{
     
+}
 
+.store__item:first-child {
+    margin-bottom: 6px;
 }
 
 .store__link {
     font-weight: 500;
     font-size: 12px;
     line-height: calc(19/12);
+    color: #212121;
     
 }
