@@ -221,11 +221,33 @@ a{
 .contacts__button-item{
 
 }
-.contacts__button{
+.contacts__button-loc{
 
     display: flex;
     align-items: center;
+    width: 196px;
+    padding: 12px 40px;
+    background-color: #F8D24E;
+    border-radius: 8px;
+    
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: calc(18/14);
 }
+.contacts__button-fr {
+
+    display: flex;
+    align-items: center;
+    width: 196px;
+    padding: 12px 55px;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: calc(18/14);
+}
+
 .contacts__icon{
+    margin-left: 4px;
 
 }
