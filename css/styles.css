@@ -1,8 +1,44 @@
 
 
-:root{
-
+.list {
+    list-style: none;
 }
+
+.link {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
 .body-style{
     font-family: 'Roboto', sans-serif;
     color: var(--text-color-black);
@@ -18,9 +54,7 @@ ul{
 a{ 
     text-decoration: none;
 }
-p{
-    margin: 0;
-}
+
 
 /* header */
 
@@ -32,17 +66,9 @@ p{
 
 
 
-
-
-
-
-
-
-
-
 .container {
     box-sizing: border-box;
-    width : 320px;
+    width: 320px;
     padding: 20px;
     margin: auto;
 }
@@ -51,9 +77,11 @@ p{
     display: flex;
     flex-flow: column;
     align-items: center;
-    
+    padding-left: 0;
     gap: 16px;
-    
+    padding-left: 0;
+
+
 
 }
 
@@ -66,9 +94,11 @@ p{
     padding-left: 32px;
     padding-right: 32px;
     border-radius: 24px;
-    background-color: chartreuse;
-    
-    
+    border: solid 1px #E1E1E1;
+    background-color: #FCFCFC;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
 }
 
 .store__name {
@@ -101,11 +131,17 @@ p{
 .store__location {
     display: block;
     margin-bottom: 24px;
+    text-decoration: none;
     font-weight: 500;
     font-size: 12px;
     line-height: calc(22/12);
     letter-spacing: 0.04em;
     color: #D6936D;
+}
+
+.store__location:hover,
+.store__location:focus{
+    text-decoration: underline;
 }
 
 .store__time {
@@ -120,11 +156,12 @@ p{
 
 }
 
-.store__time-item{
+.store__time-item {
     display: flex;
     flex-flow: column;
 }
-.store__time-item:last-child{
+
+.store__time-item:last-child {
     padding-top: 8px;
 
 }
@@ -146,22 +183,49 @@ p{
 .store__list {
     padding-left: 0;
     padding-top: 24px;
-    
+
 }
 
-
-.store__item{
-    
-}
 
 .store__item:first-child {
     margin-bottom: 6px;
 }
 
 .store__link {
+    text-decoration: none;
     font-weight: 500;
     font-size: 12px;
     line-height: calc(19/12);
     color: #212121;
-    
+
+}
+.store__link:hover,
+.store__link:focus {
+    text-decoration: underline;
+}
+
+
+/*---------- Buttons ----------*/
+
+.contacts__button-list{
+    display: flex;
+    flex-flow: column;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+
+}
+.contacts__button-item{
+
+}
+.contacts__button{
+
+    display: flex;
+    align-items: center;
+}
+.contacts__icon{
+
 }
